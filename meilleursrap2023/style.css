@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    background: linear-gradient(45deg, #6366f1, #8b5cf6, #06b6d4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    color: #e2e8f0;
+    text-align: left;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#apptitle {
+    padding: 3rem 0 2rem;
+    text-align: center;
+    position: relative;
+}
+
+#apptitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 2px;
+    margin-bottom: 10%;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.content-section {
+    margin: 3rem 0;
+}
+
+img {
+    /*max-width: 100%;*/
+    width: 60%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(85, 90, 220, 0.3);
+}
+
+#github{
+    font-size:smaller;
+}
+
+#github_link{
+    color: #6366f1;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    
+    #apptitle {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+}
